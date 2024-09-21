@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Remera Jordan",
+    "description": "remera de algodon, calidad premium",
+    "price": 15000,
+    "img": "sin imagen",
+    "code": "r0001",
+    "stock": 3
+  },
+  {
+    "id": 2,
+    "title": "Remera Nike",
+    "description": "remera nike calidad shopping",
+    "price": 16000,
+    "img": "sin imagen",
+    "code": "r0002",
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "title": "Buzo Nike",
+    "description": "Buzo de algodon calidad premium",
+    "price": 45000,
+    "img": "sin imagen",
+    "code": "b0001",
+    "stock": 10
+  },
+  {
+    "id": 4,
+    "title": "Campera GAP dama",
+    "description": "campera de algodón peinado de dama, ideal para el verano",
+    "price": 30000,
+    "img": "sin imagen",
+    "code": "b0002",
+    "stock": 8
+  },
+  {
+    "id": 5,
+    "title": "Gorra premium",
+    "description": "gorra basquet",
+    "price": 5000,
+    "img": "sin imagen",
+    "code": "g0001",
+    "stock": 3
+  },
+  {
+    "id": 6,
+    "title": "Buzo Palm Angels",
+    "description": "buzo de algodón grueso, ideal invierno. Oversize",
+    "price": 45000,
+    "img": "sin imagen",
+    "code": "b0003",
+    "stock": 10
+  },
+  {
+    "id": 7,
+    "title": "Jean Mom hombre",
+    "description": "Jean mom negro cargo",
+    "price": 40000,
+    "img": "sin imagen",
+    "code": "p0001",
+    "stock": 5
+  },
+  {
+    "id": 8,
+    "title": "Zapatillas vans",
+    "description": "zapatillas vans clasicas, calidad premium, importadas de Brasil",
+    "price": 55000,
+    "img": "sin imagen",
+    "code": "z0001",
+    "stock": 25
+  }
+]
