@@ -70,5 +70,14 @@
     "img": "sin imagen",
     "code": "z0001",
     "stock": 25
+  },
+  {
+    "id": 9,
+    "title": "zapatillas nike",
+    "description": "zapatillas calidad premium, importadas de Brasil",
+    "price": "55000",
+    "img": "Sin imagen por el momento",
+    "code": "z0005",
+    "stock": "40"
   }
 ]

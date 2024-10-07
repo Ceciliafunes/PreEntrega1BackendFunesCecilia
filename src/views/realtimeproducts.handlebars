@@ -1,6 +1,9 @@
-<h2 class="container">PRODUCTOS EN TIEMPO REAL</h2> 
-<div>Lista de productos</div>
-<div id="contenedorProductos" class="container">  
+<h2 class="container contenedorRealTime">PRODUCTOS EN TIEMPO REAL</h2> 
+<div class="container listadoProductos">
+    <div id="contenedorProductos" class="row"></div>
+</div>
+
+<div class="container formularioRealTime">  
     <h3>Formulario para agregar productos en tiempo real</h3>  
     <form class="row" id="formAgregarProducto">  
         <div class="mb-3 col-6">  
@@ -22,16 +25,9 @@
             <input type="number" id="stock" class="form-control" placeholder="Stock disponible" required>  
         </div>  
         <div class="col-12">  
-            <button type="button" id="btnEnviar" class="btn btn-primary">Agregar Producto</button>  
+            <button type="button" id="btnEnviar" class="btn btn-primary btn-agregarProduct">Agregar Producto</button>  
         </div>  
     </form>  
-
-    <h3 class="mt-4">Productos Agregados</h3>  
-    <div id="productosList" class="card container">  
-        <div class="card-body">  
-            <ul class="list-group" id="listaProductos"></ul>  
-        </div>  
-    </div>  
 </div>  
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>  

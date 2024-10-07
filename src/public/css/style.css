@@ -1,4 +1,43 @@
-h1 {
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedorRealTime {
     text-align: center;
-    color: blueviolet;
+    font-weight: bold;
+    padding: 1.25rem;
+}
+#contenedorProductos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    row-gap: 1.25rem;
+    column-gap: 1.25rem;
+    font-size: 1.2rem;
+}   
+.btn-eliminar {
+
+    color: white;
+    background-color: black;
+    border-radius: .3125rem;
+}
+.formularioRealTime {
+    padding: 1.25rem;
+}
+.btn-agregarProduct{
+    color: white;
+    background-color: black;
+    border-radius: .3125rem;
+}
+.seccionProductos h1 {
+    text-align: center;
+    padding: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }

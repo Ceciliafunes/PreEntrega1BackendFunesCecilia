@@ -14,11 +14,13 @@ const renderProductos = (data) => {
     data.forEach(item => {
         const card = document.createElement("div");
         card.classList.add("producto-card");
+        card.classList.add("col-6");
+        card.classList.add("card")
         card.innerHTML = `
                             <p> ID: ${item.id} </p>
-                            <p> Titulo:  ${item.title} </p>
+                            <p> Producto:  ${item.title} </p>
                             <p> Precio: ${item.price} </p>
-                            <button class="btn-eliminar" data-id="${item.id}">Eliminar producto</button> 
+                            <button class="btn-eliminar btn btn-primary" data-id="${item.id}">Eliminar producto</button> 
                             `;
         contenedorProductos.appendChild(card);
         
@@ -29,9 +31,8 @@ const renderProductos = (data) => {
             const id = event.target.dataset.id;  
                 eliminarProducto(id);  
             }  
-        });      
+        });   
 }
-
 
 
 //Eliminar producto
@@ -41,43 +42,29 @@ const eliminarProducto = (id) => {
 
 //form agregar product
 document.getElementById("btnEnviar").addEventListener("click",(event)=>{
-    
     event.preventDefault();
-    console.log("enviado")
+    console.log("enviado");
     agregarProducto();
 })
 
 
 //Agregar producto
 const agregarProducto = () => {
-    const title = document.getElementById("title").value
-    const description= document.getElementById("description").value
-    const price= document.getElementById("price").value
-    const img= document.getElementById("img").valu
-    const code= document.getElementById("code").value
-    const stock= document.getElementById("stock").value
+    const title = document.getElementById("title").value;
+    const description= document.getElementById("description").value;
+    const price= document.getElementById("price").value;
+    const img= document.getElementById("img").value;
+    const code= document.getElementById("code").value;
+    const stock= document.getElementById("stock").value;
     
     // Validar que todos los campos estén completos  
     if (!title || !description || !price || !img || !code || !stock) {  
-    
-        return;
+        return console.error("no fueron rellenados todos los campos");
+        
     }  
     
-    const producto = {  
-        title,  
-        description,  
-        price,  
-        img,  
-        code,  
-        stock  
-    };
+    const producto = { title, description, price, img, code, stock};
     socket.emit("agregarProducto", producto);
+    console.log("producto agregado");
 
-    // Limpiar los campos del formulario  
-    document.getElementById("title").value = "";  
-    document.getElementById("description").value = "";  
-    document.getElementById("price").value = "";  
-    document.getElementById("img").value = "";  
-    document.getElementById("code").value = "";  
-    document.getElementById("stock").value = ""; 
 }
